@@ -11,17 +11,23 @@ body{
 }
 header{
     display: flex;
+    
+
+
     justify-content: space-between;
+    
 
     flex-wrap: wrap;
     & .container{
-        margin: 0 auto;
-        background-color: rgb(227, 255, 255);
+
+
 
         display: flex;
+        gap: 2rem;
         align-items: center;
-        gap: 1rem;
+        left: auto;
         padding: 1rem;
+
         & img{
             width: 5rem;
             aspect-ratio: 1/1;
@@ -30,20 +36,21 @@ header{
         }
     }
     & nav{
-        margin: 0 auto;
+
+
         display: flex;
         align-items: center;
-        background-color: antiquewhite;
+
 
 
         & ul{
-            background-color: rgb(255, 242, 242);
+
             width: 100%;
             display: flex;
             justify-content: flex-end;
             gap: 1rem;
             padding: 3rem;
-            font-size: 1.5rem;
+
 
         }
 
@@ -72,6 +79,7 @@ main{
     width: 100%;
     min-width: 360px;
 
+
     overflow: hidden;
   }
   
@@ -79,6 +87,7 @@ main{
     width: 100%;
     height: auto;
     display: block;
+    
   }
   
   .capa-negra {
@@ -86,6 +95,8 @@ main{
     inset: 0;
     background-color: rgba(0, 0, 0, 0.5); /* capa negra con 50% de opacidad */
     z-index: 1;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 100);
+    
   }
   
   .texto {
@@ -98,4 +109,11 @@ main{
     z-index: 2;
     text-align: center;
   }
+@media (max-width: 760px){
+    header{
+        display: flex;
+        justify-content: center;
+
+    }
+}
   
